@@ -7,3 +7,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1]
 ### Added
 - MP-1: As a user I want a sidebar
+- MP-2: As a user I want a dashboard
