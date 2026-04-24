@@ -8,3 +8,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - MP-1: As a user I want a sidebar
 - MP-2: As a user I want a dashboard
+- MP-3: As a user I want a page to scan and manage wifi networks

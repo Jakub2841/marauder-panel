@@ -18,7 +18,7 @@
                     <flux:sidebar.item icon="squares-2x2" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
                         {{ __('DASHBOARD') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="wifi" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="wifi" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('WIFI SCANNER') }}
                     </flux:sidebar.item>
                     <flux:sidebar.item icon="signal" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
