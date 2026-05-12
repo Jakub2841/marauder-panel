@@ -21,16 +21,16 @@
                     <flux:sidebar.item icon="wifi" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('WIFI SCANNER') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="signal" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="signal" :href="route('ble-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('BLE SCANNER') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="shield-exclamation" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="shield-exclamation" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('ATTACK PANELS') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="cog-6-tooth" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="cog-6-tooth" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('SETTINGS') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="document-text" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="document-text" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('SYSTEM LOGS') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
