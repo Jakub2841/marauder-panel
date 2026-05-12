@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MP-2: As a user I want a dashboard
 - MP-3: As a user I want a page to scan and manage wifi networks
 - MP-4: As a user I want a page to scan and manage bluetooth signals
+- MP-5: As a user I want a page where I can launch operations from
