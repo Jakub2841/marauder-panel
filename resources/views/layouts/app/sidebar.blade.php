@@ -4,31 +4,39 @@
         @include('partials.head')
     </head>
     <body class="min-h-screen bg-white dark:bg-zinc-800">
-        <flux:sidebar sticky collapsible="mobile" class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+        <flux:sidebar sticky collapsible="mobile" class="border-e border-zinc-200 bg-zinc-50 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 dark:shadow-zinc-900/50">
             <flux:sidebar.header>
-                <x-app-logo :sidebar="true" href="{{ route('dashboard') }}" wire:navigate />
+                <a href="{{ route('dashboard') }}" wire:navigate class="block w-full">
+                    <img src="{{ asset('logo.png') }}" alt="Logo" class="w-full h-auto max-h-32 rounded object-contain">
+                </a>
                 <flux:sidebar.collapse class="lg:hidden" />
             </flux:sidebar.header>
 
             <flux:sidebar.nav>
-                <flux:sidebar.group :heading="__('Platform')" class="grid">
-                    <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Dashboard') }}
+                <flux:separator/>
+                <flux:sidebar.group class="grid mt-4 sidebar-nav">
+                    <flux:sidebar.item icon="squares-2x2" :href="route('dashboard')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('DASHBOARD') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="wifi" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('WIFI SCANNER') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="signal" :href="route('ble-scanner')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('BLE SCANNER') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="shield-exclamation" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('ATTACK PANELS') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="cog-6-tooth" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('SETTINGS') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="document-text" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('SYSTEM LOGS') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
             <flux:spacer />
-
-            <flux:sidebar.nav>
-                <flux:sidebar.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                    {{ __('Repository') }}
-                </flux:sidebar.item>
-
-                <flux:sidebar.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
-                    {{ __('Documentation') }}
-                </flux:sidebar.item>
-            </flux:sidebar.nav>
 
             <x-desktop-user-menu class="hidden lg:block" :name="auth()->user()->name" />
         </flux:sidebar>
