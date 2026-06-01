@@ -30,8 +30,8 @@
                     <flux:sidebar.item icon="cog-6-tooth" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
                         {{ __('SETTINGS') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="document-text" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
-                        {{ __('SYSTEM LOGS') }}
+                    <flux:sidebar.item icon="document-text" :href="route('system-logs')" wire:navigate class="data-current:text-blue-400">
+                        {{ __('TERMINAL') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
