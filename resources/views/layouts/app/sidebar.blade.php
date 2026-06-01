@@ -27,7 +27,7 @@
                     <flux:sidebar.item icon="shield-exclamation" :href="route('attack-panels')" wire:navigate class="data-current:text-blue-400">
                         {{ __('ATTACK PANELS') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="cog-6-tooth" :href="route('wifi-scanner')" wire:navigate class="data-current:text-blue-400">
+                    <flux:sidebar.item icon="cog-6-tooth" :href="route('profile.edit')" wire:navigate class="data-current:text-blue-400">
                         {{ __('SETTINGS') }}
                     </flux:sidebar.item>
                     <flux:sidebar.item icon="document-text" :href="route('system-logs')" wire:navigate class="data-current:text-blue-400">

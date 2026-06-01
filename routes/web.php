@@ -9,7 +9,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('wifi-scanner', 'wifi-scanner')->name('wifi-scanner');
     Route::view('ble-scanner', 'ble-scanner')->name('ble-scanner');
     Route::view('attack-panels', 'attack-panels')->name('attack-panels');
-    Route::view('system-logs', 'system-logs')->name('system-logs');
+    Route::view('terminal', 'system-logs')->name('system-logs');
 });
 
 require __DIR__.'/settings.php';

@@ -12,3 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MP-4: As a user I want a page to scan and manage bluetooth signals
 - MP-5: As a user I want a page where I can launch operations from
 - MP-6: As a user I want a page where I can access the terminal
+
+### Fixed
+- MP-8: Wifi scanner and settings light up together
+
